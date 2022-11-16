@@ -16,6 +16,7 @@
   background-attachment: fixed;
   box-sizing: border-box;
   overflow: auto;
+  overflow-wrap: break-word;
 }
         .dropdown {
         position: relative;
@@ -39,7 +40,6 @@
       }
  .grid-container {
     width: 44%;
-    /* align-items: center; */
     justify-content: center;
     text-align: left;
     margin: auto;
@@ -74,6 +74,15 @@ background-image: linear-gradient(19deg, #FAACA8 0%, #545357 100%);
 }
 .dropdown-content p{
   margin-left:2em;
+}
+
+@media screen and (max-width: 600px){
+  .dropdown-content p{
+    padding:5px;
+    margin: 2px;
+    display: flex;
+  }
+  
 }
 </style>
 </head>
