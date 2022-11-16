@@ -412,36 +412,3 @@ letter-spacing: 1px ;
   }
   
 }
-.footer{
-  background-color: black;
-  position:fixed;
-  display:block;
-  width:100%;
-}
-div{
-  /* background-color:black; */
-  color:white;
-}
-.itemsone img{
-height: 40px;
-width: 40px;
-margin: 25px;}
-.footer img:hover {
-transform: scale(1.1);
-cursor: pointer;
-opacity: 0.8;
-}
-
-footer div {
-
-background-color: #444242;
-opacity: 0.8;
-display: flex;
-justify-content: center;
-}
-.itemsone .h{
-background-color: transparent;
-}
-.conn {
-padding:0em 4em;
-}
