@@ -1,23 +1,25 @@
+body{
+	background-image: url('https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?w=2000');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	padding: 5em;
+	font-family: 'Poppins', sans-serif;
+  }
 html{
 	
 	margin: 0;
 	padding: 0;
 	font-style: sans-serif;
-	background-image: url('gt.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-
-
-
 }
-
-
-
-
  .reveal {
- 	color: black;
-	background: linear-gradient(#728f82 0 0),linear-gradient(#728f82  0 0);
+ 	/* color: rgb(19, 226, 53); */
+	background: linear-gradient(rgb(190, 178, 245) 0 0),linear-gradient(yellow 0 0);
 	background-size: 0 100%;
 	background-position: 0 0;
 	-webkit-background-clip: padding-box, text;
@@ -26,9 +28,6 @@ html{
 	-webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
 	animation: t 1.2s 0.5s  both, b 1.2s 1.3s both;
-
-
-
 }
 @keyframes t{
 	to{
@@ -45,28 +44,186 @@ html{
 	color: black;
 	font-weight: 50px;
 	font-size: 50px;
+	text-shadow: 2px 3px;
+	/* background-image: url("gl.jpg"); */
+	opacity: .5;
+
+
+
 
 
 
 }
 .li{
-	color:#3b3d0a;
+	color:black;
 
 	font-weight: 20px;
 	font-size: 30px;
 
 }
-ul{
-	list-style-image: url('health.jpg');
+.li ul{
+	list-style-image: url("health.jpg");
 	margin-left: 70px;
 }
 .pt {
 	text-align: center;
 	font-size: 30px;
-	color: #158a42;
+	/*font-weight: 20px solid black;*/
+	color: rgb(255, 255, 255);
+	/* background-color: white; */
+	
+	/* background-image: url("https://img.freepik.com/premium-vector/indikator-bmi-white-background-chart-concept-vector-icon_100456-6270.jpg"); */
+	/*opacity: 0.4;*/
+	font-weight: bold;
+	/* background: rgba(76,175,80,0.5); */
+	/* background-border: 2px solid black; */
+	/* font-family: 'Fira Sans', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+font-style: italic;
+background-repeat:no-repeat;
+/* background-size:cover; */
+
+color:rgba(200, 17, 57, 0.911);
+opacity:0.8;
+/* text-align:right; */
+margin-right:10px;
+
+
+	
+
 }
 .ht {
-	color: black;
+	color: rgb(13, 13, 14);
 	font-size: 70px;
 	font-weight: 30px;
+	text-shadow: 2px  4px;
+	/* text-decoration: underline dotted black; */
+	text-align:center;
 }
+.un{
+	text-align: center;
+	color: white;
+	background-color: white;
+
+}
+.u1{
+	font-size: 60px;
+	font-weight: 10px;
+	color:darkblue;
+}
+.u11{
+	color:rgba(135, 19, 125, 0.764);
+	font-weight: bold;
+	font-size: 30px;
+	text-align:left;
+	/* font-family: 'Libre Baskerville', serif; */
+/* font-family: 'Poor Story', cursive; */
+}
+.un{
+	font-size: 34px;
+	font-weight: 5px;
+	/* color:rgb(255, 190, 105); */
+	
+}
+.hu{
+	color: blue;
+	font-size: 40px;
+	font-weight: 20px;
+	text-shadow: 2px 2px;
+}
+.ov {
+	text-align: center;
+	color:white;
+	font-size: 30px;
+	font-weight: 15px ;
+	background-color:black;
+}
+.ov1{
+	text-align: center;
+	color: blueviolet;
+	font-size: 70px;
+	font-weight: 100px;
+
+}
+.li{
+	color: blueviolet;
+	text-decoration: none;
+	background-image:url("danger.webp");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+button{
+	text-align: center;
+	align-items: center;
+	background: black;
+	color: white;
+	border-radius: 0.5em;
+	padding:1em;
+	margin: auto;
+	justify-content: center;
+}
+.exp{
+	/* width: 100vh;
+	height: 200vh; */
+	text-align:center;
+	color:rgb(234, 225, 225);
+	/* background-image: url("love.jpg"); */
+	font-size: 30px;
+	background-color:azure;
+	/* font-family: 'Fira Sans', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+font-style: italic;
+background-image: url("https://img5.goodfon.com/wallpaper/nbig/e/98/svet-fon-oboi.jpg");
+background-repeat:no-repeat;
+background-size: cover;
+
+	
+	
+
+}
+.gbn{
+	width: 40%;
+	font-size: 24px;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.gbn p{
+	text-align: center;
+	color: black;
+	margin: auto;
+	margin-left: 1em;
+	justify-content: center;
+	font-weight: bold;
+}
+.exp2{
+	text-align: left;
+	font-size:30px;
+	background-image: url("fitness24.webp");
+	color:rgb(2, 2, 2);
+}
+.exp1{
+	font-size: 60px;
+	color:black;
+	text-shadow: 2px 2px;
+	text-align:center;
+	margin-top:50px;
+}
+.exp21{
+	font-size: 60px;
+	/* flex-wrap: wrap; */
+	color:black;
+	font-weight: bold;
+	text-shadow: 2px 2px;
+	text-align:center;
+}
+.xyz{
+	color:brown;
+}
+.ccc{
+	text-align:left;
+	/* font-family: 'Libre Baskerville', serif; */
+/* font-family: 'Poor Story', cursive; */
+}
+
+ 

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            meal
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Ubuntu&display=swap" rel="stylesheet">
+<style>
+    *{
+margin:0;
+padding:0;
+box-sizing: border-box;
+
+
+
+}
+.navbar{
+    height:10vh;
+    background-color:rgb(19, 231, 192);
+    /* margin-top: 40px; */
+    font-size: 70px;
+    text-align:center;
+    
+   
+}
+.strt{
+    text-align:center;
+    font-size:50px;
+    color:rgb(10, 239, 18);
+}
+.maind{
+    text-align:center;
+    font-size: 30px;
+    color:gray;
+}
+.maind img{
+    margin-left: 2px;
+}
+.img2 img{
+   margin-right: 50px;
+   margin-left: 50px;
+   background-size: cover;
+    
+}
+.text1{
+display: flex;
+margin-top: 20px;
+}
+.text12{
+    margin-top:130px;
+}
+.mi{
+    background-size: cover;
+    background-size: fit;
+    width:100%;
+}
+    
+
+ /* .text1 a{
+    background-color: black;
+    color:white;
+    padding: 15px 8px 15px 15px;
+
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+    text-align:center;  */
+
+.btn{
+    height: 7vh;
+    width: 10vw;
+    font-size: 21px;
+      
+    text-align: center;
+    background-color: rgb(73, 167, 235);
+    margin-left: 800px;
+    
+    margin-top: -15vh;
+    border-radius: 25px;
+    padding: 12px;
+    box-shadow: 5px 2px 1px rgb(235, 253, 255) ;
+
+}
+.maind1{
+    text-align:center;
+    font-size: 30px;
+    color:gray;
+}
+.maind1 img{
+    margin-left: 2px;
+}
+.img2 img{
+   margin-right: 50px;
+   margin-left: 50px;
+   background-size: cover;
+   
+}
+.text2{
+display: flex;
+margin-top: 20px;
+}
+.text21{
+    margin-top:130px;
+}
+.maind2{
+    /* text-align: center; */
+    font-size: 30px;
+    margin-top: 100px;
+    display: flex;
+    margin-left: 100px;
+    color:rgb(5, 148, 110);
+    /* height: auto; */
+  
+    
+}
+.imgfw2{
+    margin-top:10px;
+    margin-right:0px;
+}
+
+
+.h1{
+    font-size: 40px;
+    text-align:center;
+    margin-bottom:90px;
+    margin-left: 50px;
+    color:rgb(9, 142, 118);
+    font-weight: 100px;
+}
+.text2{
+    margin-top: 130px;
+}
+.mind3{
+    margin-top: 80px;
+    display: flex;
+    text-align: center;
+    margin-left:70px;
+}
+.mind31{
+    display:column;
+    font-size: 23px;
+    margin-top: 60px;
+    color:gray;
+    margin-left:90px;
+}
+p{
+    font-size: 28px;
+}
+.maind22{
+    display:column;
+    margin-left:0px;
+}
+.button1{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor:pointer;
+    
+  }
+  
+  .lll{
+    height: 50vh;
+    background-color:#7c3067;
+    margin-top: 40px;
+    text-align:center;
+    color:white;
+  }
+  .button {
+    background-color: rgb(15, 187, 101);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .button2{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: rgb(239, 247, 240);
+    padding: 32px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 50px;
+    /* margin-bottom: -350px;
+    margin-left: 800px; */
+  }
+  .ily{
+    font-size:50px;
+    background-color:rgb(102, 138, 162);
+    text-align:center;
+    padding:5px;
+    color:rgb(196, 200, 202);
+    margin-top:50px;
+
+  }
+  .ily h3{
+    font-size: 50px;
+    color:black;
+  }
+  .ily2{
+    font-size:200px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card{
+    background: white;
+    width: 280px;
+    height: 580px;
+    margin: 25px;
+    border-radius: 15px;
+    font-size:17px;
+    overflow:hidden;
+    text-align:center;
+    padding:4px;
+    
+   
+
+    
+}
+.card p{
+    font-size:20px;
+}
+.card-image {
+    background-color: aqua;
+    height: 250px;
+    margin-top:0px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    margin: 7px;
+}
+.car-1{
+    background-image: url(card1.png);
+}
+.card a{
+    background-color: black;
+    color:white;
+    padding: 15px 8px 15px 15px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+    text-align:center;
+}
+.card:hover{
+    background-color:rgba(22, 104, 131, 0.918);
+    color:white;
+    cursor:pointer;
+    transform: scale(1.02);
+    transition: all 1s ease;
+}
+.car-2{
+    background-image: url(card2.png);
+}
+.car-3{
+    background-image: url('card3.png');
+}
+.footer{
+    height:30vh;
+    width:100%;
+    background-color: rgb(14, 164, 164);
+    display:flex;
+    padding:8px;
+    margin:5px;
+    text-align: center;
+    font-size:8px;
+
+}
+.f1{
+    margin-left:150px;
+    font-size:2px;
+}
+.f2{
+    margin-left:50px;
+}
+.f3{
+    margin-left:50px;
+}
+.f4{
+    margin-left:50px;  
+}
+.f5{
+    margin-left:50px;  
+}
+.f6{
+    margin-left:50px;
+}
+.fasm{
+    
+    margin-left: -500px;
+    margin-top:50px;
+    display:flex;
+    margin-right:100px;
+    align-items:center;
+}
+a{
+    height: 65px;
+    width: 65px;
+    background-color: #f5f6fa;
+    border-radius:30px;
+    /* box-shadow: 1px 4px 2px 2px #dcdde1; */
+    line-height:88px;
+    margin:10px;
+    text-align:center;
+}
+a i{
+   transition: all 0.5s linear; 
+}
+a:hover i{
+    transform: scale(1.4);
+}
+.cpyrght{
+    margin-left: -450px;
+    margin-top:150px;
+    display:flex;
+    margin-right:100px;
+    align-items:center;
+    padding: 50px;
+    color:aqua;
+    
+}
+.b1{
+    background-color:#18f98f;
+    border: none;
+    position: absolute;
+   padding: 5px 5px;
+   font-size: 30px;
+   font-weight:bold;
+   margin-left:150px;
+   margin-top:-20vh;
+}
+.b2{
+    background-color:#18f98f;
+    border: none;
+    position: absolute;
+   padding: 5px 5px;
+   font-size: 30px;
+   font-weight:bold;
+   margin-left:800px;
+   margin-top:-15vh;
+
+}
+.b3{
+    background-color:#18f98f;
+    border: none;
+    position: absolute;
+   padding: 5px 5px;
+   font-size: 30px;
+   font-weight:bold;
+   margin-left:800px;
+   margin-top:-7vh;
+
+}
+p{
+    font-family: 'Dosis', sans-serif;
+}
+.strt{
+    font-family: 'Ubuntu', sans-serif;
+    color:blue;
+}
+@media (max-width:600px) {
+
+    .text1{
+flex-direction: column;
+
+}
+.text2{
+    flex-direction: column;
+    box-sizing: border-box;
+   
+    }
+    .maind2{
+        
+        flex-direction: column;
+       
+        width:100%;
+        box-sizing: border-box;
+    
+        
+    }
+    .b1{
+        margin-right:80px;
+        width:auto;
+        
+    }
+    .mind3{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+        width:100vh;
+    }
+    .fasm{
+        width:100%;
+    }
+    .cpyrght{
+        margin: top -5px;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    
+}
+
+</style>
+    </head>
+    <div class="navbar">
+        <p class="strt"> Plan to Eat</p>
+        
+    </div>
+    <div class="mi">
+        <img src="wow.png" width="100%">
+    </div>
+    <div class="maind">
+        <p>1.Easily import recipes to your </p>
+       <p>recipe organizer, drag them to your meal planner, and we’ll make your organized grocery list.</p><br> <br>
+       <div class="text1">
+       <div class="img2"><img src="mobile.png"></div>
+       
+       <div class="text12">
+       
+       <h3>
+        1. Collect recipes from anywhere.</h3>
+        <p>Easily add recipes to your personalized recipe book from websites, cookbooks, recipe cards… or anywhere else!</p>
+        <a href=""Read More></a>
+        </div>
+        </div>
+    </div>
+   <div class="btn1"> <button type="button" class="b2" onclick="location.href='https://www.tasteofhome.com/article/14-day-meal-plan/'">Learn more</button></div>
+    
+    
+
+    
+    
+    <div class="maind2">
+       
+            <div class="maind22">
+<h2>2.Plan recipes that fit your life:</h2>
+        <p>Decide when you would like to eat your recipes by placing them<br>
+        on your calendar. Your meal plan is completely flexible to<br>
+        accommodate your schedule. </p>
+        </div>
+        
+        <img src="img2.png" align ="right">
+        
+       
+    </div>
+    
+    <button type="button" class="b1" onclick="location.href='https://mealpreponfleek.com/food-prep-ideas/'">Learn more</button>
+    
+    <div class="mind3">
+        <img src="mobileex.png">
+        <div class="mind31">
+        <h2>3.The Plan to Eat shopping list on the mobile app with ingredients populated from a recipe and some items crossed off
+            3. We create your shopping list. Yes, it’s really that easy.</h2>
+            <p>Your shopping list will be made for you automatically based on the</p>
+            <p>recipes on your planner. Select the date range of recipes that you</p>
+            <p>would like to shop for and either cross items off your list using our</p>
+            <p>app, or print your list.</p>
+
+    </div>
+    </div>
+    <button type="button" class="b3" onclick="location.href='https://www.plantoeat.com/tour/automated-grocery-list-maker/'">Learn more</button>
+    <div class="lll">
+        <p>Try it FREE for 14 Days! No credit card needed!</p><br>
+        <button class="button">Start Free Trial</button>
+        <p>At the end of your trial, you can subscribe for $4.95/month or $39/year (only $3.25/month).</p><br><br>
+        <p>There’s nothing to remember to cancel if Plan to Eat is not for you. We won’t bother you, but we might cry a little.</p><br><br>
+        <!-- <img src="play.png"> -->
+        </div>
+        <div class="ily">
+            <h3>The Plan to Eat Story</h3>
+            <p>Plan to Eat was born from one family’s desire to make the meal planning process simpler. Clint Bounds initially</p>
+            <p>created Plan to Eat to help his family, but soon realized it could benefit others too. Read more about The Plan</p>
+            <p>to Eat Story and what inspired Clint to create a digital meal planning program.</p>
+        </div>
+    <div class="ily2">
+        <p>From the Blog</p>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-image car-1"></div>
+                <h1>October 2022 Monthly</h1>
+                <h2>Recap & Updates</h2>
+                <p>Recent Articles from the Blog Enjoy</p>
+                <p>some of our most recent posts from</p>
+                <p>October 2022 on the Plan to Eat</p>
+                <p>blog, including tips & tricks,</p><hr><br>
+                <p>Plan to Eat . October 31, 2022</p>
+                
+            
+        </div>
+        <div class="card">
+            <div class="card-image car-2"></div>
+                <h1>October 2022 Monthly</h1>
+                <h2>Recap & Updates</h2>
+                <p>Recent Articles from the Blog Enjoy</p>
+                <p>some of our most recent posts from</p>
+                <p>October 2022 on the Plan to Eat</p>
+                <p>blog, including tips & tricks,</p><hr><br>
+                <p>Roni . October 21, 2022</p>
+                
+            
+        </div>
+        <div class="card">
+            <div class="card-image car-3"></div>
+                <h1>Summer 2022 Recipe </h1>
+                <h2>Recap</h2>
+                <p>At Plan to Eat HQ, we’re</p>
+                <p>transitioning out of Summer and</p>
+                <p>into Autumn. The nights are chilly,</p>
+                <p>but the days are still warm and</p>
+                <p>sunny.</p><hr><br>
+                <p>Roni . October 14, 2022</p>
+                
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="f1">
+        <p>Buy a Gift </p>
+    </div>
+      <div class="f2">
+        <p>Recipe Clipper</p>
+      </div>  
+      <div class="f3">
+        <p>Swag Store</p>
+      </div>
+      <div class="f4">
+        <p> FAQs  </p>
+        </div>
+        <div class="f5">
+            <p> Support    </p>
+        </div>
+        <div class="f6">
+            <p>Contact Us</p>
+        </div>
+        <div class="fasm">
+            <a href="">
+                <i class="fa fa-4x fa-facebook"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-4x fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-4x fa-twitter"></i>
+            </a>
+           
+           
+        </div>
+        <div class="cpyrght">
+            <p class="pl">Legal  Pivacy</p>
+            
+            <p> © 2022 get Fit,LLC</p>
+        </div>
+    </div>
+    
+
+
+</html>

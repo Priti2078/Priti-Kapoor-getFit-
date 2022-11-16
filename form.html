@@ -1,277 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
     <style>
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-html {
-  overflow-y: scroll;
-}
-
-body {
-  background: #c1bdba;
-  font-family: 'Titillium Web', sans-serif;
-}
-.form {
-  background: rgba(19, 35, 47, 0.9);
-  padding: 40px;
-  max-width: 600px;
-  margin: 40px auto;
-  border-radius: 4px;
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-}
-
-.tab-group {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 40px 0;
-}
-.tab-group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.tab-group li a {
-  display: block;
-  text-decoration: none;
-  padding: 15px;
-  background: rgba(160, 179, 176, 0.25);
-  color: #a0b3b0;
-  font-size: 20px;
-  float: left;
-  width: 50%;
-  text-align: center;
-  cursor: pointer;
-  transition: .5s ease;
-}
-.tab-group li a:hover {
-  background: #179b77;
-  color: #ffffff;
-}
-.tab-group .active a {
-  background: #1ab188;
-  color: #ffffff;
-}
-
-.tab-content > div:last-child {
-  display: none;
-}
-
-h1 {
-  text-align: center;
-  color: #ffffff;
-  font-weight: 300;
-  margin: 0 0 40px;
-}
-
-label {
-  position: absolute;
-  transform: translateY(6px);
-  left: 13px;
-  color: rgba(255, 255, 255, 0.5);
-  transition: all 0.25s ease;
-  pointer-events: none;
-  font-size: 22px;
-}
-label.active {
-  transform: translateY(50px);
-  left: 2px;
-  font-size: 14px;
-}
-label.active .req {
-  opacity: 0;
-}
-
-label.highlight {
-  color: #ffffff;
-}
-
-input, textarea {
-  font-size: 22px;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 5px 10px;
-  background: none;
-  background-image: none;
-  border: 1px solid #a0b3b0;
-  color: #ffffff;
-  border-radius: 0;
-  transition: border-color .25s ease, box-shadow .25s ease;
-}
-input:focus, textarea:focus {
-  outline: 0;
-  border-color: #1ab188;
-}
-
-textarea {
-  border: 2px solid #a0b3b0;
-  resize: vertical;
-}
-
-.field-wrap {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.top-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.top-row > div {
-  float: left;
-  width: 48%;
-  margin-right: 4%;
-}
-.top-row > div:last-child {
-  margin: 0;
-}
-
-.button {
-  border: 0;
-  outline: none;
-  border-radius: 0;
-  padding: 15px 0;
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  background: #1ab188;
-  color: #ffffff;
-  transition: all 0.5s ease;
-  /* -webkit-appearance: none; */
-}
-.button:hover, .button:focus {
-  background: #179b77;
-}
-
-.button-block {
-  display: block;
-  width: 100%;
-}
-
-.forgot {
-  margin-top: -20px;
-  text-align: right;
-}
-
-    </style>
-</head>
-<body>
-    <div class="form">
-      
-        <ul class="tab-group">
-          <li class="tab active"><a href="#signup">Sign Up</a></li>
-          <li class="tab"><a href="#login">Log In</a></li>
-        </ul>
-        
-        <div class="tab-content"> 
-          <div id="signup">   
-            <h1>Sign Up for Free</h1>
-            
-            <form action="/" method="post">
-            
-            <div class="top-row">
-              <div class="field-wrap">
-                <input  type="text" placeholder="First Name*" required >
-              </div>
-          
-              <div class="field-wrap">
-                <input  type="text" placeholder="Last Name*" required >
-              </div>
-            </div>
-  
-            <div class="field-wrap">
-              <input type="email" placeholder="Email Address*">
-            </div>
-            
-            <div class="field-wrap">
-              <input  type="password" placeholder="Password*" required >
-            </div>
-            
-            <button type="submit" class="button button-block"/>Get Started</button>
-            
-            </form>
-  
-          </div>
-          
-          <div id="login">   
-            <h1>Welcome Back!</h1>
-            
-            <form action="/" method="post">
-            
-              <div class="field-wrap">
-                <input  type="email" placeholder="Email Address*" required >
-            </div>
-            
-            <div class="field-wrap">
-              <input  type="password" placeholder="Password*" required >
-            </div>
-        
-            
-            <p class="forgot"><a href="#">Forgot Password?</a></p>
-            
-            <button class="button button-block">Log In</button>
-            
-            </form>
-  
-          </div>
-          
-        </div>
-        
-  </div> 
-    </div>
-    <script>
-         $('.form').find('input, textarea').on('keyup blur focus', function (e) {
-  
-  var $this = $(this),
-      label = $this.prev('label');
-
-    if (e.type === 'keyup') {
-      if ($this.val() === '') {
-          label.removeClass('active highlight');
-        } else {
-          label.addClass('active highlight');
-        }
-    } else if (e.type === 'blur') {
-      if( $this.val() === '' ) {
-        label.removeClass('active highlight'); 
-      } else {
-        label.removeClass('highlight');   
-      }   
-    } else if (e.type === 'focus') {
-      
-      if( $this.val() === '' ) {
-        label.removeClass('highlight'); 
-      } 
-      else if( $this.val() !== '' ) {
-        label.addClass('highlight');
+      body {
+           background-image: url('https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?w=2000');
+           background-repeat: no-repeat;
+           background-size: 100% 100%;
+           background-attachment: fixed;
+           box-sizing: border-box;
       }
-    }
+      .center-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid black;
+        border-radius: 40px;
+        width: 300px;
+        height: 320px;
+        text-align: center;
+        color: black;
+      }
+      .text-field {
+        padding: 10px 30px;
+        margin: 20px 0;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 12px;
+        /* color: white; */
+      }
+      
+      .btn-style {
+        padding: 10px 30px;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+      }
+      .btn-style:hover {
+        background-color: white;
+        color: black;
+        transform:scale(1.1);
+    transition-duration: 1s;
+    
+      }
+      .an-btn {
+        color: black;
+        margin-top: 10px;
+        border: 0;
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+        font-size: 10px;
+      }
+      .an-btn span{
+        color: rgb(215, 30, 30);
+        font-weight: bold;
+      }
+      #register-div {
+        display: none;
+      }
+      #result-box {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center-box" id="login-div">
+      <h2>Login</h2>
+      <input type="email" id="login-email" class="text-field" name="login-email" placeholder="Email" required
+      /><br />
+      <input type="password" id="login-password" class="text-field" name="login-password" placeholder="Password" required
+      /><br />
+      <button id="login-btn" class="btn-style">Login</button><br />
+      <button id="reg-btn" class="an-btn">
+        don't have an account? <span>REGISTER</span>
+      </button>
+    </div>
+    <div class="center-box" id="register-div">
+      <h2>Register</h2>
+      <input
+        type="email" id="register-email" class="text-field" name="register-email" placeholder="Email" required/><br />
+      <input
+        type="password" id="register-password" class="text-field" name="register-password" placeholder="Password" required
+      /><br />
+      <button id="register-btn" class="btn-style">Register</button><br />
+      <button id="log-btn" class="an-btn">have an account?<span> LOGIN</span></button>
+    </div>
+    <div id="result-box">
+      <h3 id="result"></h3><br>
+      <button id="log-out-btn" class="btn-style">LOG OUT</button>
+    </div>
 
-});
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+      import {getAuth,signInWithEmailAndPassword,createUserWithEmailAndPassword,signOut} 
+      from "https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-$('.tab a').on('click', function (e) {
-  
-  e.preventDefault();
-  
-  $(this).parent().addClass('active');
-  $(this).parent().siblings().removeClass('active');
-  
-  target = $(this).attr('href');
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyC-4mOsoTnqpvcpDidZ0WiwAXc-mL-2Nu0",
+        authDomain: "formlogin-a8488.firebaseapp.com",
+        projectId: "formlogin-a8488",
+        storageBucket: "formlogin-a8488.appspot.com",
+        messagingSenderId: "608074216411",
+        appId: "1:608074216411:web:236e8b419e27be2174adfe",
+      };
 
-  $('.tab-content > div').not(target).hide();
-  
-  $(target).fadeIn(600);
-  
-});
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+
+      document.getElementById("reg-btn").addEventListener("click", function () {
+        document.getElementById("register-div").style.display = "inline";
+        document.getElementById("login-div").style.display = "none";
+      });
+      document.getElementById("log-btn").addEventListener("click", function () {
+        document.getElementById("register-div").style.display = "none";
+        document.getElementById("login-div").style.display = "inline";
+      });
+
+      document.getElementById("login-btn").addEventListener("click", function () {
+          const loginEmail = document.getElementById("login-email").value;
+          const loginPassword = document.getElementById("login-password").value;
+
+          signInWithEmailAndPassword(auth, loginEmail, loginPassword)
+            .then((userCredential) => {
+              // Signed in
+              const user = userCredential.user;
+              document.getElementById("result-box").style.display = "inline";
+              document.getElementById("login-div").style.display = "none";
+              document.getElementById("result").innerHTML ="Welcome Back<br>" + loginEmail + " was Login Successfully";
+              // ...
+            })
+            .catch((error) => {
+              const errorCode = error.code;
+              const errorMessage = error.message;
+              document.getElementById("result-box").style.display = "none";
+              document.getElementById("login-div").style.display = "inline";
+              document.getElementById("result").innerHTML ="Sorry ! <br>" + errorMessage;
+            });
+        });
+
+      document.getElementById("register-btn").addEventListener("click", function () {
+          const registerEmail = document.getElementById("register-email").value;
+          const registerPassword = document.getElementById("register-password").value;
+
+          createUserWithEmailAndPassword(auth, registerEmail, registerPassword)
+            .then((userCredential) => {
+              
+              const user = userCredential.user;
+              document.getElementById("result-box").style.display = "inline";
+              document.getElementById("register-div").style.display = "none";
+              document.getElementById("result").innerHTML ="Welcome <br>" + registerEmail + " was Registered Successfully";
+            })
+            .catch((error) => {
+              const errorCode = error.code;
+              const errorMessage = error.message;
+              document.getElementById("result-box").style.display = "inline";
+              document.getElementById("register-div").style.display = "none";
+              document.getElementById("result").innerHTML ="Sorry ! <br>" + errorMessage;
+            });
+        });
+
+        document.getElementById("log-out-btn").addEventListener('click',function(){
+          signOut(auth).then(() => {
+            document.getElementById("result-box").style.display ="none";
+              document.getElementById("login-div").style.display ="inline";
+          }).catch((error) => {
+  document.getElementById("result").innerHTML ="Sorry ! <br>" + errorMessage;
+   });
+ });
+
+ if(input.registerEmail.value && form.registerPassword.value)
+ {
+  document.write(email);
+ }
     </script>
-</body>
+  </body>
 </html>
